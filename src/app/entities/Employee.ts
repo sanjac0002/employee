@@ -7,7 +7,7 @@ export class Employee extends AbstractEntity {
     @PrimaryGeneratedColumn("uuid")
     public id: string;
 
-    @Column({ nullable: false })
+    @Column({ nullable: true })
     public name: string;
 
     @Column({ nullable: false, unique: true })
